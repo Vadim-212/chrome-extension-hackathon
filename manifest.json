@@ -1,0 +1,14 @@
+{
+    "name": "chrome-extension-hackathon",
+    "description": "hackathon extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["activeTab", "scripting", "webRequest"],
+    "host_permissions": [
+        "https://www.olx.kz/*",
+        "http://localhost:8080/*"
+    ]
+}
